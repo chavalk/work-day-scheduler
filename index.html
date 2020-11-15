@@ -30,9 +30,171 @@
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
+      <div class="row">
+        <div class="col-md-1 hour" id="nine">
+          9AM
+        </div>
+        <textarea class="col-md-10" id="nine-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-nine">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="ten">
+          10AM
+        </div>
+        <textarea class="col-md-10" id="ten-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-ten">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="eleven">
+          11AM
+        </div>
+        <textarea class="col-md-10" id="eleven-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-eleven">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="twelve">
+          12AM
+        </div>
+        <textarea class="col-md-10" id="twelve-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-twelve">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="one">
+          1PM
+        </div>
+        <textarea class="col-md-10" id="one-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-one">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="two">
+          2PM
+        </div>
+        <textarea class="col-md-10" id="two-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-two">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="three">
+          3PM
+        </div>
+        <textarea class="col-md-10" id="three-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-three">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="four">
+          4PM
+        </div>
+        <textarea class="col-md-10" id="four-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-four">
+          Save
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-md-1 hour" id="five">
+          5PM
+        </div>
+        <textarea class="col-md-10" id="five-text">
+          
+        </textarea>
+        <button class="col-md-1 saveBtn" id="save-five"> 
+          Save
+        </button>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+
+        // Add current day
+        $("#currentDay").text(moment().format('dddd, MMMM Do'));
+
+        $("#save-nine").on("click", function(){
+          localStorage.setItem("firstitem", $("#nine-text").val());
+        })
+        
+        $("#nine-text").text(localStorage.getItem("firstitem"));
+
+        $("#save-ten").on("click", function(){
+          localStorage.setItem("seconditem", $("#ten-text").val());
+        })
+        
+        $("#ten-text").text(localStorage.getItem("seconditem"));
+
+        $("#save-eleven").on("click", function(){
+          localStorage.setItem("thirditem", $("#eleven-text").val());
+        })
+        
+        $("#eleven-text").text(localStorage.getItem("thirditem"));
+        
+        $("#save-twelve").on("click", function(){
+          localStorage.setItem("fourthitem", $("#twelve-text").val());
+        })
+        
+        $("#twelve-text").text(localStorage.getItem("fourthitem"));
+
+        $("#save-one").on("click", function(){
+          localStorage.setItem("fifthitem", $("#one-text").val());
+        })
+        
+        $("#one-text").text(localStorage.getItem("fifthitem"));
+
+        $("#save-two").on("click", function(){
+          localStorage.setItem("sixthitem", $("#two-text").val());
+        })
+        
+        $("#two-text").text(localStorage.getItem("sixthitem"));
+
+        $("#save-three").on("click", function(){
+          localStorage.setItem("seventhitem", $("#three-text").val());
+        })
+        
+        $("#three-text").text(localStorage.getItem("seventhitem"));
+
+        $("#save-four").on("click", function(){
+          localStorage.setItem("eighthitem", $("#four-text").val());
+        })
+        
+        $("#four-text").text(localStorage.getItem("eighthitem"));
+
+        $("#save-five").on("click", function(){
+          localStorage.setItem("ninthitem", $("#five-text").val());
+        })
+        
+        $("#five-text").text(localStorage.getItem("ninthitem"));
+      })
+    </script>
   </body>
 </html>
