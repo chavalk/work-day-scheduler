@@ -1,200 +1,429 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
   <head>
+
+    <!-- Meta tag -->
     <meta charset="UTF-8" />
+
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- IE meta tag -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap link -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+
+    <!-- Fontawesome link -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+
+    <!-- Google fonts link -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+
+    <!-- CSS stylesheet link -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Page title -->
     <title>Work Day Scheduler</title>
+
   </head>
 
   <body>
+
+    <!-- Jumbotron header -->
     <header class="jumbotron">
+
+      <!-- Header -->
       <h1 class="display-3">Work Day Scheduler</h1>
+
+      <!-- App description -->
       <p class="lead">A simple calendar app for scheduling your work day</p>
+
+      <!-- Empty paragraph to add current day -->
       <p id="currentDay" class="lead"></p>
+
     </header>
+
+    <!-- Container for timeblocks -->
     <div class="container">
+
       <!-- Timeblocks go here -->
+      <!-- First row for first hour of the day -->
       <div class="row">
+
+        <!-- First column in first row for first hour of day. Size 1. -->
         <div class="col-md-1 hour" id="nine">
           9AM
         </div>
+
+        <!-- Second column in first row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="nine-text">
           
         </textarea>
+
+        <!-- Third column in first row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-nine">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+       <!-- Second row for second hour of the day -->
       <div class="row">
+
+        <!-- First column in second row for second hour of day. Size 1. -->
         <div class="col-md-1 hour" id="ten">
           10AM
         </div>
+
+        <!-- Second column in second row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="ten-text">
           
         </textarea>
+
+        <!-- Third column in second row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-ten">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Third row for third hour of the day -->
       <div class="row">
+
+        <!-- First column in third row for third hour of day. Size 1. -->
         <div class="col-md-1 hour" id="eleven">
           11AM
         </div>
+
+        <!-- Second column in third row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="eleven-text">
           
         </textarea>
+
+        <!-- Third column in third row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-eleven">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Fourth row for fourth hour of the day -->
       <div class="row">
+
+        <!-- First column in fourth row for fourth hour of day. Size 1. -->
         <div class="col-md-1 hour" id="twelve">
-          12AM
+          12PM
         </div>
+
+        <!-- Second column in fourth row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="twelve-text">
           
         </textarea>
+
+        <!-- Third column in fourth row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-twelve">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Fifth row for fifth hour of the day -->
       <div class="row">
+
+        <!-- First column in fifth row for fifth hour of day. Size 1. -->
         <div class="col-md-1 hour" id="one">
           1PM
         </div>
+
+        <!-- Second column in fifth row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="one-text">
           
         </textarea>
+
+        <!-- Third column in fifth row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-one">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Sixth row for sixth hour of the day -->
       <div class="row">
+
+        <!-- First column in sixth row for sixth hour of day. Size 1. -->
         <div class="col-md-1 hour" id="two">
           2PM
         </div>
+
+        <!-- Second column in sixth row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="two-text">
           
         </textarea>
+
+        <!-- Third column in sixth row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-two">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Seventh row for seventh hour of the day -->
       <div class="row">
+
+        <!-- First column in seventh row for seventh hour of day. Size 1. -->
         <div class="col-md-1 hour" id="three">
           3PM
         </div>
+
+        <!-- Second column in seventh row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="three-text">
           
         </textarea>
+
+        <!-- Third column in seventh row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-three">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Eighth row for eighth hour of the day -->
       <div class="row">
+
+        <!-- First column in eighth row for eighth hour of day. Size 1. -->
         <div class="col-md-1 hour" id="four">
           4PM
         </div>
+
+        <!-- Second column in eighth row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="four-text">
           
         </textarea>
+
+        <!-- Third column in eighth row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-four">
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
+      <!-- Ninth row for ninth hour of the day -->
       <div class="row">
+
+        <!-- First column in ninth row for ninth hour of day. Size 1. -->
         <div class="col-md-1 hour" id="five">
           5PM
         </div>
+
+        <!-- Second column in ninth row for textarea where tasks can be entered. Size 10. -->
         <textarea class="col-md-10" id="five-text">
           
         </textarea>
+
+        <!-- Third column in ninth row for save button. Size 1. -->
         <button class="col-md-1 saveBtn" id="save-five"> 
-          Save
+
+          <!-- Save button icon from fontawesome -->
+          <i class="fas fa-save"></i>
+
         </button>
+
       </div>
+
     </div>
 
+    <!-- Jquery link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Moment JS link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
+    <!-- Script -->
     <script type="text/javascript">
 
+      // Run JavaScript when DOM is ready
       $(document).ready(function(){
 
         // Add current day
         $("#currentDay").text(moment().format('dddd, MMMM Do'));
 
+        // Save text entered in first hour box to local storage
         $("#save-nine").on("click", function(){
           localStorage.setItem("firstitem", $("#nine-text").val());
         })
         
+        // Display any saved items in first hour box from local storage
         $("#nine-text").text(localStorage.getItem("firstitem"));
 
+        // Save text entered in second hour box to local storage
         $("#save-ten").on("click", function(){
           localStorage.setItem("seconditem", $("#ten-text").val());
         })
         
+        // Display any saved items in second hour box from local storage
         $("#ten-text").text(localStorage.getItem("seconditem"));
 
+        // Save text entered in third hour box to local storage
         $("#save-eleven").on("click", function(){
           localStorage.setItem("thirditem", $("#eleven-text").val());
         })
         
+        // Display any saved items in third hour box from local storage
         $("#eleven-text").text(localStorage.getItem("thirditem"));
         
+        // Save text entered in fourth hour box to local storage
         $("#save-twelve").on("click", function(){
           localStorage.setItem("fourthitem", $("#twelve-text").val());
         })
         
+        // Display any saved items in fourth hour box from local storage
         $("#twelve-text").text(localStorage.getItem("fourthitem"));
 
+        // Save text entered in fifth hour box to local storage
         $("#save-one").on("click", function(){
           localStorage.setItem("fifthitem", $("#one-text").val());
         })
         
+        // Display any saved items in fifth hour box from local storage
         $("#one-text").text(localStorage.getItem("fifthitem"));
 
+        // Save text entered in sixth hour box to local storage
         $("#save-two").on("click", function(){
           localStorage.setItem("sixthitem", $("#two-text").val());
         })
         
+        // Display any saved items in sixth hour box from local storage
         $("#two-text").text(localStorage.getItem("sixthitem"));
 
+        // Save text entered in seventh hour box to local storage
         $("#save-three").on("click", function(){
           localStorage.setItem("seventhitem", $("#three-text").val());
         })
         
+        // Display any saved items in seventh hour box from local storage
         $("#three-text").text(localStorage.getItem("seventhitem"));
 
+        // Save text entered in eighth hour box to local storage
         $("#save-four").on("click", function(){
           localStorage.setItem("eighthitem", $("#four-text").val());
         })
         
+        // Display any saved items in eighth hour box from local storage
         $("#four-text").text(localStorage.getItem("eighthitem"));
 
+        // Save text entered in ninth hour box to local storage
         $("#save-five").on("click", function(){
           localStorage.setItem("ninthitem", $("#five-text").val());
         })
         
+        // Display any saved items in ninth hour box from local storage
         $("#five-text").text(localStorage.getItem("ninthitem"));
+
+        // If statements to determine background color for text areas depending on the time of day.
+        if(moment().hour() > 09){
+          $("#nine-text").addClass("past");
+        }
+
+        if(moment().hour() > 10){
+          $("#ten-text").addClass("past");
+        }
+
+        if(moment().hour() == 11){
+          $("#eleven-text").addClass("present");
+        } else if(moment().hour() > 11){
+          $("#eleven-text").addClass("past");
+        }
+
+        if(moment().hour() < 12){
+          $("#twelve-text").addClass("future");
+        } else if(moment().hour() == 12){
+          $("#twelve-text").addClass("present");
+        }else{
+          $("#twelve-text").addClass("past");
+        }
+
+        if(moment().hour() < 13){
+          $("#one-text").addClass("future");
+        }else if(moment().hour() == 01){
+          $("#one-text").addClass("present");
+        }else{
+          $("#one-text").addClass("past");
+        }
+
+        if(moment().hour() < 14){
+          $("#two-text").addClass("future");
+        } else if(moment().hour() == 02){
+          $("#two-text").addClass("present");
+        } else{
+          $("#two-text").addClass("past");
+        }
+
+        if(moment().hour() < 15){
+          $("#three-text").addClass("future");
+        } else if(moment().hour() == 03){
+          $("#three-text").addClass("present");
+        }else{
+          $("#three-text").addClass("past");
+        }
+
+        if(moment().hour() < 16){
+          $("#four-text").addClass("future");
+        }else if(moment().hour() == 04){
+          $("#four-text").addClass("present");
+        }else{
+          $("#four-text").addClass("past");
+        }
+
+        if(moment().hour() < 17){
+          $("#five-text").addClass("future");
+        }else if(moment().hour() == 05){
+          $("#five-text").addClass("present");
+        }else{
+          $("#five-text").addClass("past");
+        }
+
       })
+      
     </script>
+
   </body>
+
 </html>
