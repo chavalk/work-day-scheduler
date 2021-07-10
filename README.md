@@ -10,7 +10,7 @@ An application meant to provide an easy way to keep track of your daily tasks at
 
 The project allows users to add tasks to be completed during each hour of a work day. It also makes give a different color to each task depending on the time of the day. Below is a GIF of the application in action.
 
-![burger](./public//assets/img/burger.gif)
+![work-day-scheduler](./images/work-day-scheduler.gif)
 
 ## Why is the project useful
 
