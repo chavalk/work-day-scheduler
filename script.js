@@ -26,7 +26,10 @@ function loadSavedItems() {
 
 // Save entry to local storage
 $(".saveBtn").on("click", function() {
-    localStorage.setItem($(this).parent().attr("id"), $("#9hr").val());
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+
+    localStorage.setItem(time, text);
 })
 
 // Call function to color code
