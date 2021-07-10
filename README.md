@@ -1,48 +1,47 @@
-# work-day-scheduler
+# Work Day Scheduler
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-Work Day Scheduler is an application for a user to enter tasks to be completed throughout the day. The color of the rows changes depending on the time of the day to reflect the time for that task has passed.
+An application meant to provide an easy way to keep track of your daily tasks at work.
 
-Below is a screenshot of the landing page for the application:
+## What the project does
 
-![work-day-scheduler](./images/blank.png)
+The project allows users to add tasks to be completed during each hour of a work day. It also makes give a different color to each task depending on the time of the day. Below is a GIF of the application in action.
 
-And here is a screenshot of the page after adding some tasks:
+![burger](./public//assets/img/burger.gif)
 
-![work-day-scheduler](./images/filled.png)
+## Why is the project useful
 
-## Table of Contents
+The project makes it easy for users to stay in control of the many thing to be completed on a given work day.
 
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+## How can users get started with this project
 
-## Installation
-
-There is no need to install anything to interact with the application. Simply navigate to the deployed application by clicking on the link below.
+Simply navigate to the deployed version of the website by following the link below.
 
 https://chavalk.github.io/work-day-scheduler/
 
-## Usage
+## What technologies were used with this project
 
-The application is built allow users to enter tasks to complete throughout the day.
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+* Momentjs
+* Font Awesome
+* Google Fonts
+* jQuery
+* Local Storage
 
-## Contributing
-
-No contributions are currently accepted for this project.
-
-## Tests
-
-There is no testing available within the application.
-
-## Questions
+## Where can users get help with your project
 
 My GitHub username is: chavalk
 
 Link: https://github.com/chavalk
 
 If you have additional questions, feel free to reach me at chavalk@hotmail.com.
+
+## Who maintains and contributes to the project
+
+Currently I'm the only person maintaining and contributing to the project.
